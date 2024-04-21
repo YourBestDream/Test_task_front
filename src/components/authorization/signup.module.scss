@@ -1,0 +1,77 @@
+.authorization{
+    &__input{
+        position: relative;
+        border: 0.5px solid var(--color-grey);
+        padding: 1.9rem;
+        width: 40rem;
+        border-radius: 1rem;
+    }
+
+    &__input:focus{
+        border: 0.5px solid var(--color-grey);
+    }
+
+    &__header{
+        margin-bottom: 0.75rem;   
+    }
+
+    &__form{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        column-gap: 2rem;
+        row-gap: 2rem;
+        margin-top: 3rem;
+    }
+
+    &__wrapper{
+        display: flex;
+        padding: 3rem;
+        box-shadow: 2px 3px 3px 4px rgba($color: #000000, $alpha: 0.225);
+        border-radius: 7px;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    &__toggle{
+        font-weight: 100;
+        margin-top: 1rem;
+        transition: text-decoration 0.25s linear;
+    }
+
+    &__toggle:hover{
+        text-decoration: underline;
+    }
+
+    &__container{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    &__submitButton{
+        margin-top: 1.5rem;
+        background-color: var(--color-black);
+        padding: 1.2rem 0;
+        color: var(--color-white);
+    }
+}
+
+.passwordInputWrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon{
+    width: 2.25rem;
+    margin-left: -20px;
+}
+
+.passwordVisibilityToggle{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    right: 12%;
+}
